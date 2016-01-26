@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include partials/template/head.ejs %>
+  </head>
+  <body class="<%= page %>">
+    <% include partials/template/header.ejs %>
+    <% include partials/content/speakerslist.ejs %>
+
+    <section class="layout">
+      <div class="primary">
+        <% include partials/content/whoarewe.ejs %>
+        <% include partials/content/bluemix.ejs %>
+
+      </div><!-- primary section -->
+      <aside class="secondary">
+        <% include partials/content/nextmeeting.ejs %>
+        <% include partials/content/artworklist.ejs %>
+      </aside><!-- secondary -->
+    </section><!-- layout section -->
+
+
+    <% include partials/template/footer.ejs %>
+    <% include partials/template/jsdefaults.ejs %>
+  </body>
+</html>

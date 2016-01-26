@@ -1,0 +1,12 @@
+<article class="artworklist">
+  <h1>Developer Skills</h1>
+  <p>List of all the key skills of the developers will be showing here as images</p>
+
+    <div class="pixgrid">
+        <% if(work.length > 0){ %>
+            <% for(i=0; i<work.length; i++){ %>
+                <img src="/images/work/<%= work[i]%>" alt="work <%= i %>">
+            <% } %>
+        <% } %>
+    </div>
+</article>
