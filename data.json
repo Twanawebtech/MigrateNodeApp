@@ -19,7 +19,7 @@
     "shortname" : "Paddy_Conner",
     "summary" : "A developer advocate is someone who's primary responsibility is to make it easy for developers to use a platform. In my case, I'm trying to make it easy for developers to use OpenStack and the Rackspace Open Cloud. I view the role as having a foundation of three pillars: development, advocacy, and community",
     "description": "I represent third-party software developers. We're out there trying to build the platforms and tools that people love to use, make developers productive, and make it worthwhile for them to invest time in learning our platform. When building this stuff, sometimes it's easy to lose sight of the forest for the trees. Which is to say, we can lose sight of the very developers we're building this platform for, if we get too focused on the details of the technologies. We need to keep the needs of the third-party developers foremost in our minds at all times to prevent that. I represent my company, Rackspace, and its core values. Public speaking is definitely a requirement for the role. You need to be able to comfortably get up in front of an audience and let them know why your platform and its ecosystem are the best place to invest their time and effort. Focus on the benefits to them. My preference is to give workshops where you can get developers writing some code, doing something useful with the platform, and really demonstrating its ability. This goes back to the developer half of developer advocate. The product of this includes presentations, workshops, and demos.",
-    "work" : ["JAVA.png", "Android-Icon.png"]
+    "work" : ["JAVA.png", "Android-Icon.png", "hybrid_apps_development.jpg"]
   }],
 
   "social" : [{

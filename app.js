@@ -8,6 +8,8 @@ var routes = require('./routes/index');
 
 var app = express();
 
+
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -17,6 +19,51 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+
+/*
+// connect to DB
+function initDBConnection() {
+
+  if(process.env.VCAP_SERVICES) {
+    var vcapServices = JSON.parse(process.env.VCAP_SERVICES);
+    if(vcapServices.cloudantNoSQLDB) {
+      dbCredentials.host = vcapServices.cloudantNoSQLDB[0].credentials.host;
+      dbCredentials.port = vcapServices.cloudantNoSQLDB[0].credentials.port;
+      dbCredentials.user = vcapServices.cloudantNoSQLDB[0].credentials.username;
+      dbCredentials.password = vcapServices.cloudantNoSQLDB[0].credentials.password;
+      dbCredentials.url = vcapServices.cloudantNoSQLDB[0].credentials.url;
+
+      cloudant = require('cloudant')(dbCredentials.url);
+
+      // check if DB exists if not create
+      cloudant.db.create(dbCredentials.dbName, function (err, res) {
+        if (err) { console.log('could not create db ', err); }
+      });
+
+      db = cloudant.use(dbCredentials.dbName);
+
+    } else {
+      console.warn('Could not find Cloudant credentials in VCAP_SERVICES environment variable - data will be unavailable to the UI');
+    }
+  } else{
+    console.warn('VCAP_SERVICES environment variable not set - data will be unavailable to the UI');
+    // For running this app locally you can get your Cloudant credentials
+    // from Bluemix (VCAP_SERVICES in "cf env" output or the Environment
+    // Variables section for an app in the Bluemix console dashboard).
+    // Alternately you could point to a local database here instead of a
+    // Bluemix service.
+    //dbCredentials.host = "REPLACE ME";
+    //dbCredentials.port = REPLACE ME;
+    //dbCredentials.user = "REPLACE ME";
+    //dbCredentials.password = "REPLACE ME";
+    //dbCredentials.url = "REPLACE ME";
+  }
+}
+
+initDBConnection();
+
+*/
 
 //var data = require('./data.json');
 app.locals.appdata = require('./data.json');

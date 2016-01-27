@@ -6,3 +6,5 @@ applications:
   name: DeveloperNodeApp01
   host: developernodeapp01
   disk_quota: 1024M
+  services:
+  - Cloudant NoSQL DB-he
