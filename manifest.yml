@@ -3,8 +3,6 @@ applications:
   memory: 256M
   instances: 1
   domain: mybluemix.net
-  name: DeveloperNodeApp01
-  host: developernodeapp01
+  name: MigrateNodeApp
+  host: MigrateNodeApp
   disk_quota: 1024M
-  services:
-  - Cloudant NoSQL DB-he
